@@ -13,15 +13,32 @@ struct TargetSelectItem: View {
     var target: Target
     
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             HStack {
-                if isSelected {
-                    Image(systemName: "checkmark.circle.fill")
-                        .imageScale(.large)
-                }
-                else {
-                    Image(systemName: "circle")
-                        .imageScale(.large)
+                Group {
+                    switch target.category {
+                    case "Energie":
+                        Image(systemName: "bolt.fill")
+                            .imageScale(.large)
+                    case "Wäsche":
+                        Image(systemName: "drop.fill")
+                            .imageScale(.large)
+                    case "Ernährung":
+                        Image(systemName: "leaf.fill")
+                            .imageScale(.large)
+                    case "Mobilität":
+                        Image(systemName: "bicycle")
+                            .imageScale(.large)
+                    case "Netzwerk":
+                        Image(systemName: "person.3.fill")
+                            .imageScale(.large)
+                    case "Suffizienz":
+                        Image(systemName: "wrench.and.screwdriver.fill")
+                            .imageScale(.large)
+                    default:
+                        Image(systemName: "circle")
+                            .imageScale(.large)
+                    }
                 }
                 Spacer()
                 if let points = target.points {
@@ -29,40 +46,11 @@ struct TargetSelectItem: View {
                 }
             }
             
-            Group {
-                switch target.category {
-                case "Energie":
-                    Image(systemName: "bolt.fill")
-                        .resizable()
-                case "Wäsche":
-                    Image(systemName: "drop.fill")
-                        .resizable()
-                case "Ernährung":
-                    Image(systemName: "leaf.fill")
-                        .resizable()
-                case "Mobilität":
-                    Image(systemName: "bicycle")
-                        .resizable()
-                case "Netzwerk":
-                    Image(systemName: "person.3.fill")
-                        .resizable()
-                case "Suffizienz":
-                    Image(systemName: "wrench.and.screwdriver.fill")
-                        .resizable()
-                default:
-                    Image(systemName: "circle")
-                        .resizable()
-                }
-            }
-            .scaledToFit()
-            .frame(height: 50)
-            .padding()
-            
             Text(target.title)
             Spacer()
         }
         .padding()
-        .background(Color.gray.opacity(0.5))
+        .background(isSelected ? Color.green : Color.gray.opacity(0.5))
         .cornerRadius(10)
     }
 }

@@ -16,7 +16,7 @@ struct AddTargetView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 150, maximum: 150))], spacing: 10){
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 120, maximum: 2000))], spacing: 10){
                     ForEach(targetStore.targets) { target in
                         Button(action: {
                             if selectedTargets.contains(target) {
