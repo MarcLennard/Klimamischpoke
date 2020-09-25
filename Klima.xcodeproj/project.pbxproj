@@ -11,6 +11,10 @@
 		E83A8543251DF5F300B1734D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A8542251DF5F300B1734D /* ContentView.swift */; };
 		E83A8545251DF5F400B1734D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83A8544251DF5F400B1734D /* Assets.xcassets */; };
 		E83A8548251DF5F400B1734D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83A8547251DF5F400B1734D /* Preview Assets.xcassets */; };
+		E83A8551251DF72000B1734D /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A8550251DF72000B1734D /* OverviewView.swift */; };
+		E83A8554251DF76400B1734D /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A8553251DF76400B1734D /* SharingView.swift */; };
+		E83A8557251DFBD200B1734D /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A8556251DFBD200B1734D /* ProgressBar.swift */; };
+		E83A855B251DFFA300B1734D /* AddActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A855A251DFFA300B1734D /* AddActivityButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		E83A8544251DF5F400B1734D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E83A8547251DF5F400B1734D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E83A8549251DF5F400B1734D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83A8550251DF72000B1734D /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		E83A8553251DF76400B1734D /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
+		E83A8556251DFBD200B1734D /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		E83A855A251DFFA300B1734D /* AddActivityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +60,15 @@
 		E83A853F251DF5F300B1734D /* Klima */ = {
 			isa = PBXGroup;
 			children = (
+				E83A855F251E0C6500B1734D /* Friends */,
+				E83A855E251E0C5900B1734D /* Overview */,
+				E83A8559251DFF8800B1734D /* Activity */,
 				E83A8540251DF5F300B1734D /* KlimaApp.swift */,
 				E83A8542251DF5F300B1734D /* ContentView.swift */,
 				E83A8544251DF5F400B1734D /* Assets.xcassets */,
 				E83A8549251DF5F400B1734D /* Info.plist */,
 				E83A8546251DF5F400B1734D /* Preview Content */,
+				E83A8556251DFBD200B1734D /* ProgressBar.swift */,
 			);
 			path = Klima;
 			sourceTree = "<group>";
@@ -67,6 +79,30 @@
 				E83A8547251DF5F400B1734D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E83A8559251DFF8800B1734D /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				E83A855A251DFFA300B1734D /* AddActivityButton.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		E83A855E251E0C5900B1734D /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				E83A8550251DF72000B1734D /* OverviewView.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		E83A855F251E0C6500B1734D /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				E83A8553251DF76400B1734D /* SharingView.swift */,
+			);
+			path = Friends;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83A855B251DFFA300B1734D /* AddActivityButton.swift in Sources */,
 				E83A8543251DF5F300B1734D /* ContentView.swift in Sources */,
+				E83A8551251DF72000B1734D /* OverviewView.swift in Sources */,
 				E83A8541251DF5F300B1734D /* KlimaApp.swift in Sources */,
+				E83A8557251DFBD200B1734D /* ProgressBar.swift in Sources */,
+				E83A8554251DF76400B1734D /* SharingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
