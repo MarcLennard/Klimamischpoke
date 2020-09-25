@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            OverviewView()
+            TargetView()
                 .tabItem {
-                    Label("Übersicht", systemImage: "square.grid.2x2.fill")
+                    Label("Ziele", systemImage: "square.grid.2x2.fill")
                 }
             
             SharingView()
@@ -31,6 +31,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(TargetStore())
             .previewDevice(.init(stringLiteral: "iPhone X"))
     }
 }

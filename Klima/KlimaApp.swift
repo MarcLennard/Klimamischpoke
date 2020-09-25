@@ -12,6 +12,7 @@ struct KlimaApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(TargetStore())
         }
     }
 }
