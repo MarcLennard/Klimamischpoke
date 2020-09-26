@@ -58,7 +58,7 @@ struct TargetView: View {
                 
         }
         .padding()
-        .background(Rectangle().fill(LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]), startPoint: .leading, endPoint: .trailing)))
+        .background(Rectangle().fill(LinearGradient(gradient: Gradient(colors: [Color.green, Color.orange]), startPoint: .leading, endPoint: .trailing)))
         .cornerRadius(10)
     }
 }
