@@ -89,7 +89,7 @@ struct TargetsView: View {
         content.title = "Wöchentliche Abfrage"
         content.body = "Eine neue Abfrage für dein Ziel ist da!"
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 30, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
         let uuidString = UUID().uuidString
         let request = UNNotificationRequest(identifier: uuidString,
