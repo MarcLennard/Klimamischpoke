@@ -13,11 +13,30 @@ struct TargetsView: View {
     var body: some View {
         NavigationView {
             Group {
-                if targetStore.selectedTargets.count == 0 {
-                    Text("Du hast keine Ziele ausgesucht")
-                }
-                else {
                     ScrollView {
+                            VStack {
+                                HStack {
+                                    Spacer()
+                                    ProgressBar(co2Progress: .constant(0.85), pointProgress: .constant(0.75))
+                                    Spacer()
+                                }
+                                HStack {
+                                    Text("Noch 1 Woche")
+                                        .foregroundColor(.orange)
+                                    Divider()
+                                    Text("51 kg CO² eingespart")
+                                        .foregroundColor(.green)
+                                }
+                                Text("234 Klimapunkte")
+                            }
+                            .background(Color.gray.opacity(0.2))
+                            .cornerRadius(10)
+                            .padding()
+                            
+                        if targetStore.selectedTargets.count == 0 {
+                            Text("Du hast keine Ziele ausgesucht")
+                        }
+                        else {
                         LazyVStack {
                                 ForEach(targetStore.selectedTargets.map { $0 }) { target in
                                     TargetView(target: target)
@@ -40,5 +59,6 @@ struct TargetsView_Previews: PreviewProvider {
     static var previews: some View {
         TargetsView()
             .environmentObject(TargetStore())
+            .environment(\.colorScheme, .dark)
     }
 }
