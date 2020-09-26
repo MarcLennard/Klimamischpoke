@@ -36,8 +36,11 @@ struct TargetsView: View {
                                 }
                                 Text("234 Klimapunkte")
                             }
+                            
                             .background(Color.gray.opacity(0.2))
+                            .cornerRadius(10)
                             .padding()
+                            
                         
                             Link(destination: URL(string: "https://uba.co2-rechner.de/de_DE/living-hs#panel-calc")!) {
                                 HStack {
@@ -49,8 +52,9 @@ struct TargetsView: View {
                                 }
                             }
                             .background(Color.gray.opacity(0.2))
-                            .padding()
                             .cornerRadius(10)
+                            .padding(.horizontal)
+                            
                         
                         
                         

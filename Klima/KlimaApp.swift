@@ -13,6 +13,7 @@ struct KlimaApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(TargetStore())
+                .environmentObject(FriendStore())
         }
     }
 }
