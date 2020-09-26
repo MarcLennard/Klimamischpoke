@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            TargetView()
+            TargetsView()
                 .tabItem {
                     Label("Ziele", systemImage: "square.grid.2x2.fill")
                 }

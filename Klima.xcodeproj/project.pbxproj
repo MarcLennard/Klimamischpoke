@@ -20,10 +20,11 @@
 		E86BB7C7251E66BC006D61A2 /* TargetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BB7C6251E66BC006D61A2 /* TargetStore.swift */; };
 		E86BB7CB251E689D006D61A2 /* AddTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BB7CA251E689D006D61A2 /* AddTargetView.swift */; };
 		E86BB7CE251E6B18006D61A2 /* individuelle_ziele.csv in Resources */ = {isa = PBXBuildFile; fileRef = E86BB7CD251E6B18006D61A2 /* individuelle_ziele.csv */; };
-		E86BB7D3251E71F2006D61A2 /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BB7D2251E71F2006D61A2 /* TargetView.swift */; };
+		E86BB7D3251E71F2006D61A2 /* TargetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BB7D2251E71F2006D61A2 /* TargetsView.swift */; };
 		E86BB7D7251E756C006D61A2 /* AddTargetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BB7D6251E756C006D61A2 /* AddTargetButton.swift */; };
 		E8EC994B251E7E9E00BD234D /* TargetSelectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC994A251E7E9E00BD234D /* TargetSelectItem.swift */; };
 		E8EC994E251E82B300BD234D /* Daten_kurz_v1.csv in Resources */ = {isa = PBXBuildFile; fileRef = E8EC994D251E82B300BD234D /* Daten_kurz_v1.csv */; };
+		E8EC9955251F2B5100BD234D /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC9954251F2B5100BD234D /* TargetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,10 +42,11 @@
 		E86BB7C6251E66BC006D61A2 /* TargetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetStore.swift; sourceTree = "<group>"; };
 		E86BB7CA251E689D006D61A2 /* AddTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTargetView.swift; sourceTree = "<group>"; };
 		E86BB7CD251E6B18006D61A2 /* individuelle_ziele.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = individuelle_ziele.csv; path = data/individuelle_ziele.csv; sourceTree = "<group>"; };
-		E86BB7D2251E71F2006D61A2 /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
+		E86BB7D2251E71F2006D61A2 /* TargetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetsView.swift; sourceTree = "<group>"; };
 		E86BB7D6251E756C006D61A2 /* AddTargetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTargetButton.swift; sourceTree = "<group>"; };
 		E8EC994A251E7E9E00BD234D /* TargetSelectItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSelectItem.swift; sourceTree = "<group>"; };
 		E8EC994D251E82B300BD234D /* Daten_kurz_v1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Daten_kurz_v1.csv; sourceTree = "<group>"; };
+		E8EC9954251F2B5100BD234D /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				E86BB7D0251E71BF006D61A2 /* AddTarget */,
-				E86BB7D2251E71F2006D61A2 /* TargetView.swift */,
+				E86BB7D2251E71F2006D61A2 /* TargetsView.swift */,
+				E8EC9954251F2B5100BD234D /* TargetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,11 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8EC9955251F2B5100BD234D /* TargetView.swift in Sources */,
 				E86BB7D7251E756C006D61A2 /* AddTargetButton.swift in Sources */,
 				E86BB7C7251E66BC006D61A2 /* TargetStore.swift in Sources */,
 				E83A855B251DFFA300B1734D /* AddActivityButton.swift in Sources */,
 				E83A8543251DF5F300B1734D /* ContentView.swift in Sources */,
-				E86BB7D3251E71F2006D61A2 /* TargetView.swift in Sources */,
+				E86BB7D3251E71F2006D61A2 /* TargetsView.swift in Sources */,
 				E86BB7C0251E6251006D61A2 /* Target.swift in Sources */,
 				E83A8551251DF72000B1734D /* OverviewView.swift in Sources */,
 				E8EC994B251E7E9E00BD234D /* TargetSelectItem.swift in Sources */,
