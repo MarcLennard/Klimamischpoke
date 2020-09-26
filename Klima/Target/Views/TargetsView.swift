@@ -41,7 +41,6 @@ struct TargetsView: View {
                             .cornerRadius(10)
                             .padding()
                             
-                        
                             Link(destination: URL(string: "https://uba.co2-rechner.de/de_DE/living-hs#panel-calc")!) {
                                 HStack {
                                     Spacer()
@@ -54,10 +53,7 @@ struct TargetsView: View {
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(10)
                             .padding(.horizontal)
-                            
-                        
-                        
-                        
+
                             if targetStore.selectedTargets.count == 0 {
                                 Text("Du hast keine Ziele ausgesucht")
                             }

@@ -25,7 +25,7 @@ struct ContentView: View {
                     Label("Münster", systemImage: "house.fill")
                 }
             
-            SharingView()
+            RewardsView()
                 .tabItem {
                     Label("Belohnungen", systemImage: "tag.fill")
                 }

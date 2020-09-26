@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E82D48C3251F6126003A9965 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82D48C2251F6126003A9965 /* RewardsView.swift */; };
 		E83A8541251DF5F300B1734D /* KlimaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A8540251DF5F300B1734D /* KlimaApp.swift */; };
 		E83A8543251DF5F300B1734D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A8542251DF5F300B1734D /* ContentView.swift */; };
 		E83A8545251DF5F400B1734D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83A8544251DF5F400B1734D /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E82D48C2251F6126003A9965 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
 		E83A853D251DF5F300B1734D /* Klima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83A8540251DF5F300B1734D /* KlimaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlimaApp.swift; sourceTree = "<group>"; };
 		E83A8542251DF5F300B1734D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E82D48C0251F60E4003A9965 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				E82D48C1251F60F1003A9965 /* Views */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		E82D48C1251F60F1003A9965 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E82D48C2251F6126003A9965 /* RewardsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E83A8534251DF5F300B1734D = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +156,7 @@
 		E83A853F251DF5F300B1734D /* Klima */ = {
 			isa = PBXGroup;
 			children = (
+				E82D48C0251F60E4003A9965 /* Rewards */,
 				E8AB125A251F5C21008222FD /* Monster */,
 				E8AB1257251F539B008222FD /* Klima.entitlements */,
 				E86BB7BE251E6245006D61A2 /* Target */,
@@ -367,6 +386,7 @@
 				E8EC9955251F2B5100BD234D /* TargetView.swift in Sources */,
 				E86BB7D7251E756C006D61A2 /* AddTargetButton.swift in Sources */,
 				E8AB125C251F5C43008222FD /* MonsterView.swift in Sources */,
+				E82D48C3251F6126003A9965 /* RewardsView.swift in Sources */,
 				E86BB7C7251E66BC006D61A2 /* TargetStore.swift in Sources */,
 				E83A855B251DFFA300B1734D /* AddActivityButton.swift in Sources */,
 				E83A8543251DF5F300B1734D /* ContentView.swift in Sources */,
