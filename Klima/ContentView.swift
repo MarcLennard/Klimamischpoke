@@ -20,7 +20,7 @@ struct ContentView: View {
                     Label("Freunde", systemImage: "person.3.fill")
                 }
             
-            SharingView()
+            MonsterView()
                 .tabItem {
                     Label("Münster", systemImage: "house.fill")
                 }
