@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 @main
 struct KlimaApp: App {
@@ -14,6 +15,17 @@ struct KlimaApp: App {
             ContentView()
                 .environmentObject(TargetStore())
                 .environmentObject(FriendStore())
+                .onAppear {
+                    registerForPushNotifications()
+                }
         }
+    }
+    
+    func registerForPushNotifications() {
+      UNUserNotificationCenter.current() // 1
+        .requestAuthorization(options: [.alert, .sound, .badge]) { // 2
+          granted, error in
+          print("Permission granted: \(granted)") // 3
+      }
     }
 }

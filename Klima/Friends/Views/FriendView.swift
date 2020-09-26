@@ -16,7 +16,7 @@ struct FriendView: View {
             HStack(alignment: .center) {
                 ProgressBar(co2Progress: .constant(friend.co2progress), pointProgress: .constant(friend.pointProgress), size: .small)
                 VStack(alignment: .leading) {
-                    Text("\(friend.points) Punkte")
+                    Text("\(friend.points) Klimapunkte")
                         .foregroundColor(.orange)
                         .font(.headline)
                     Text("\(friend.co2Saving) kg CO² eingespart")
