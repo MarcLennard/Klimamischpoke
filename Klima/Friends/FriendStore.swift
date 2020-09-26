@@ -37,7 +37,7 @@ class FriendStore: ObservableObject {
                    ]),
             Friend(name: "Karl-Friedrich Boerne",
                    points: 220,
-                   co2Saving: 49,
+                   co2Saving: 61,
                    co2progress: 0.6,
                    pointProgress: 0.7,
                    targets: [

@@ -39,7 +39,12 @@ struct TargetsView: View {
                         else {
                         LazyVStack {
                                 ForEach(targetStore.selectedTargets.map { $0 }) { target in
-                                    TargetView(target: target)
+                                    Button(action: {
+                                        notification()
+                                    }, label: {
+                                        TargetView(target: target)
+                                    })
+                                    .buttonStyle(PlainButtonStyle())
                                 }
                             }
                         .padding()
@@ -50,7 +55,26 @@ struct TargetsView: View {
                 try? targetStore.setTargets(targets)
             }))
             .navigationTitle("Meine Ziele")
+        }
+    }
+    
+    private func notification() {
+        let content = UNMutableNotificationContent()
+        content.title = "Wöchentliche Abfrage"
+        content.body = "Eine neue Abfrage für dein Ziel ist da!"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 30, repeats: false)
+        
+        let uuidString = UUID().uuidString
+        let request = UNNotificationRequest(identifier: uuidString,
+                    content: content, trigger: trigger)
 
+        // Schedule the request with the system.
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.add(request) { (error) in
+           if error != nil {
+            print(error)
+           }
         }
     }
 }
