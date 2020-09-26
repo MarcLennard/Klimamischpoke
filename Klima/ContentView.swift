@@ -24,6 +24,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Münster", systemImage: "house.fill")
                 }
+            
+            SharingView()
+                .tabItem {
+                    Label("Belohnungen", systemImage: "tag.fill")
+                }
         }
     }
 }
