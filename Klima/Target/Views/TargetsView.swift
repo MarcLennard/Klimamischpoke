@@ -17,16 +17,17 @@ struct TargetsView: View {
                             VStack {
                                 HStack {
                                     Spacer()
-                                    ProgressBar(co2Progress: .constant(1.5), pointProgress: .constant(0.64))
+                                    ProgressBar(co2Progress: .constant(0.85), pointProgress: .constant(0.75))
                                     Spacer()
                                 }
                                 HStack {
-                                    Text("50 Punkte")
+                                    Text("Noch 1 Woche")
                                         .foregroundColor(.orange)
                                     Divider()
-                                    Text("2 kg CO² eingespart")
+                                    Text("51 kg CO² eingespart")
                                         .foregroundColor(.green)
                                 }
+                                Text("234 Klimapunkte")
                             }
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(10)
