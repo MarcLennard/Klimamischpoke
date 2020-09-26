@@ -15,6 +15,11 @@
 		E83A8554251DF76400B1734D /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A8553251DF76400B1734D /* SharingView.swift */; };
 		E83A8557251DFBD200B1734D /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A8556251DFBD200B1734D /* ProgressBar.swift */; };
 		E83A855B251DFFA300B1734D /* AddActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A855A251DFFA300B1734D /* AddActivityButton.swift */; };
+		E8446D78251F403200B2D21E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8446D77251F403200B2D21E /* WidgetKit.framework */; };
+		E8446D7A251F403200B2D21E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8446D79251F403200B2D21E /* SwiftUI.framework */; };
+		E8446D7D251F403200B2D21E /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8446D7C251F403200B2D21E /* Tip.swift */; };
+		E8446D7F251F403500B2D21E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8446D7E251F403500B2D21E /* Assets.xcassets */; };
+		E8446D83251F403500B2D21E /* TipExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8446D75251F403200B2D21E /* TipExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E86BB7C0251E6251006D61A2 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BB7BF251E6251006D61A2 /* Target.swift */; };
 		E86BB7C4251E646C006D61A2 /* CSV in Frameworks */ = {isa = PBXBuildFile; productRef = E86BB7C3251E646C006D61A2 /* CSV */; };
 		E86BB7C7251E66BC006D61A2 /* TargetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BB7C6251E66BC006D61A2 /* TargetStore.swift */; };
@@ -27,6 +32,30 @@
 		E8EC9955251F2B5100BD234D /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC9954251F2B5100BD234D /* TargetView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E8446D81251F403500B2D21E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E83A8535251DF5F300B1734D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8446D74251F403200B2D21E;
+			remoteInfo = TipExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8446D87251F403500B2D21E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8446D83251F403500B2D21E /* TipExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E83A853D251DF5F300B1734D /* Klima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83A8540251DF5F300B1734D /* KlimaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlimaApp.swift; sourceTree = "<group>"; };
@@ -38,6 +67,12 @@
 		E83A8553251DF76400B1734D /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
 		E83A8556251DFBD200B1734D /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		E83A855A251DFFA300B1734D /* AddActivityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityButton.swift; sourceTree = "<group>"; };
+		E8446D75251F403200B2D21E /* TipExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TipExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8446D77251F403200B2D21E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E8446D79251F403200B2D21E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E8446D7C251F403200B2D21E /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		E8446D7E251F403500B2D21E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8446D80251F403500B2D21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E86BB7BF251E6251006D61A2 /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
 		E86BB7C6251E66BC006D61A2 /* TargetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetStore.swift; sourceTree = "<group>"; };
 		E86BB7CA251E689D006D61A2 /* AddTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTargetView.swift; sourceTree = "<group>"; };
@@ -58,6 +93,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8446D72251F403200B2D21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8446D7A251F403200B2D21E /* SwiftUI.framework in Frameworks */,
+				E8446D78251F403200B2D21E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +111,8 @@
 				E86BB7CD251E6B18006D61A2 /* individuelle_ziele.csv */,
 				E8EC994D251E82B300BD234D /* Daten_kurz_v1.csv */,
 				E83A853F251DF5F300B1734D /* Klima */,
+				E8446D7B251F403200B2D21E /* Tip */,
+				E8446D76251F403200B2D21E /* Frameworks */,
 				E83A853E251DF5F300B1734D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				E83A853D251DF5F300B1734D /* Klima.app */,
+				E8446D75251F403200B2D21E /* TipExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +175,25 @@
 			path = Friends;
 			sourceTree = "<group>";
 		};
+		E8446D76251F403200B2D21E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8446D77251F403200B2D21E /* WidgetKit.framework */,
+				E8446D79251F403200B2D21E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8446D7B251F403200B2D21E /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				E8446D7C251F403200B2D21E /* Tip.swift */,
+				E8446D7E251F403500B2D21E /* Assets.xcassets */,
+				E8446D80251F403500B2D21E /* Info.plist */,
+			);
+			path = Tip;
+			sourceTree = "<group>";
+		};
 		E86BB7BE251E6245006D61A2 /* Target */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,10 +234,12 @@
 				E83A8539251DF5F300B1734D /* Sources */,
 				E83A853A251DF5F300B1734D /* Frameworks */,
 				E83A853B251DF5F300B1734D /* Resources */,
+				E8446D87251F403500B2D21E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E8446D82251F403500B2D21E /* PBXTargetDependency */,
 			);
 			name = Klima;
 			packageProductDependencies = (
@@ -180,6 +248,23 @@
 			productName = Klima;
 			productReference = E83A853D251DF5F300B1734D /* Klima.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E8446D74251F403200B2D21E /* TipExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8446D84251F403500B2D21E /* Build configuration list for PBXNativeTarget "TipExtension" */;
+			buildPhases = (
+				E8446D71251F403200B2D21E /* Sources */,
+				E8446D72251F403200B2D21E /* Frameworks */,
+				E8446D73251F403200B2D21E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TipExtension;
+			productName = TipExtension;
+			productReference = E8446D75251F403200B2D21E /* TipExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -191,6 +276,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					E83A853C251DF5F300B1734D = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					E8446D74251F403200B2D21E = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -212,6 +300,7 @@
 			projectRoot = "";
 			targets = (
 				E83A853C251DF5F300B1734D /* Klima */,
+				E8446D74251F403200B2D21E /* TipExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +314,14 @@
 				E86BB7CE251E6B18006D61A2 /* individuelle_ziele.csv in Resources */,
 				E83A8548251DF5F400B1734D /* Preview Assets.xcassets in Resources */,
 				E83A8545251DF5F400B1734D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8446D73251F403200B2D21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8446D7F251F403500B2D21E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +348,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8446D71251F403200B2D21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8446D7D251F403200B2D21E /* Tip.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8446D82251F403500B2D21E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8446D74251F403200B2D21E /* TipExtension */;
+			targetProxy = E8446D81251F403500B2D21E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E83A854A251DF5F400B1734D /* Debug */ = {
@@ -373,11 +486,12 @@
 		E83A854D251DF5F400B1734D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Klima/Preview Content\"";
-				DEVELOPMENT_TEAM = V8T2CF59VF;
+				DEVELOPMENT_TEAM = WFE8H575L7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Klima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -395,11 +509,12 @@
 		E83A854E251DF5F400B1734D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Klima/Preview Content\"";
-				DEVELOPMENT_TEAM = V8T2CF59VF;
+				DEVELOPMENT_TEAM = WFE8H575L7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Klima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -409,6 +524,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Klima;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8446D85251F403500B2D21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WFE8H575L7;
+				INFOPLIST_FILE = Tip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Klima.Tip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8446D86251F403500B2D21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WFE8H575L7;
+				INFOPLIST_FILE = Tip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Klima.Tip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -431,6 +588,15 @@
 			buildConfigurations = (
 				E83A854D251DF5F400B1734D /* Debug */,
 				E83A854E251DF5F400B1734D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8446D84251F403500B2D21E /* Build configuration list for PBXNativeTarget "TipExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8446D85251F403500B2D21E /* Debug */,
+				E8446D86251F403500B2D21E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
