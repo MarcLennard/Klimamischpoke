@@ -51,7 +51,7 @@ struct RewardsView: View {
                                     .font(.system(size: 20))
                                 
                                 HStack {
-                                    Text("10 Punkte")
+                                    Text("20 Punkte")
                                         .padding(10)
                                 }
                                 .foregroundColor(.white)
@@ -89,11 +89,11 @@ struct RewardsView: View {
                                 Spacer()
                                 Text("KOSTENFREI")
                                     .font(.system(size: 12))
-                                Text("1x Kaffee")
+                                Text("1x 90 Min. Busticket")
                                     .font(.system(size: 20))
                                 
                                 HStack {
-                                    Text("20 Punkte")
+                                    Text("60 Punkte")
                                         .padding(10)
                                 }
                                 .foregroundColor(.white)
@@ -109,7 +109,7 @@ struct RewardsView: View {
                             ZStack {
                                 Rectangle()
                                     .foregroundColor(Color.gray.opacity(0.9))
-                                Image(systemName: "tram.fill")
+                                Image(systemName: "bus.fill")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(height: 40)
@@ -134,7 +134,7 @@ struct RewardsView: View {
                                     .font(.system(size: 20))
                                 
                                 HStack {
-                                    Text("30 Punkte")
+                                    Text("45 Punkte")
                                         .padding(10)
                                 }
                                 .foregroundColor(.white)
