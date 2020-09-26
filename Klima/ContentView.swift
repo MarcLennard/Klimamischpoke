@@ -33,5 +33,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environmentObject(TargetStore())
             .previewDevice(.init(stringLiteral: "iPhone X"))
+            .environment(\.colorScheme, .dark)
     }
 }
