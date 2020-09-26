@@ -27,6 +27,9 @@
 		E86BB7CE251E6B18006D61A2 /* individuelle_ziele.csv in Resources */ = {isa = PBXBuildFile; fileRef = E86BB7CD251E6B18006D61A2 /* individuelle_ziele.csv */; };
 		E86BB7D3251E71F2006D61A2 /* TargetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BB7D2251E71F2006D61A2 /* TargetsView.swift */; };
 		E86BB7D7251E756C006D61A2 /* AddTargetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86BB7D6251E756C006D61A2 /* AddTargetButton.swift */; };
+		E8AB1243251F4861008222FD /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AB1242251F4861008222FD /* FriendView.swift */; };
+		E8AB1248251F4888008222FD /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AB1247251F4888008222FD /* Friend.swift */; };
+		E8AB124E251F48F3008222FD /* FriendStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AB124D251F48F3008222FD /* FriendStore.swift */; };
 		E8EC994B251E7E9E00BD234D /* TargetSelectItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC994A251E7E9E00BD234D /* TargetSelectItem.swift */; };
 		E8EC994E251E82B300BD234D /* Daten_kurz_v1.csv in Resources */ = {isa = PBXBuildFile; fileRef = E8EC994D251E82B300BD234D /* Daten_kurz_v1.csv */; };
 		E8EC9955251F2B5100BD234D /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC9954251F2B5100BD234D /* TargetView.swift */; };
@@ -79,6 +82,9 @@
 		E86BB7CD251E6B18006D61A2 /* individuelle_ziele.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = individuelle_ziele.csv; path = data/individuelle_ziele.csv; sourceTree = "<group>"; };
 		E86BB7D2251E71F2006D61A2 /* TargetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetsView.swift; sourceTree = "<group>"; };
 		E86BB7D6251E756C006D61A2 /* AddTargetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTargetButton.swift; sourceTree = "<group>"; };
+		E8AB1242251F4861008222FD /* FriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
+		E8AB1247251F4888008222FD /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		E8AB124D251F48F3008222FD /* FriendStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendStore.swift; sourceTree = "<group>"; };
 		E8EC994A251E7E9E00BD234D /* TargetSelectItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSelectItem.swift; sourceTree = "<group>"; };
 		E8EC994D251E82B300BD234D /* Daten_kurz_v1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Daten_kurz_v1.csv; sourceTree = "<group>"; };
 		E8EC9954251F2B5100BD234D /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
@@ -170,7 +176,9 @@
 		E83A855F251E0C6500B1734D /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				E83A8553251DF76400B1734D /* SharingView.swift */,
+				E8AB1246251F4876008222FD /* Views */,
+				E8AB1247251F4888008222FD /* Friend.swift */,
+				E8AB124D251F48F3008222FD /* FriendStore.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -222,6 +230,15 @@
 				E8EC994A251E7E9E00BD234D /* TargetSelectItem.swift */,
 			);
 			path = AddTarget;
+			sourceTree = "<group>";
+		};
+		E8AB1246251F4876008222FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E83A8553251DF76400B1734D /* SharingView.swift */,
+				E8AB1242251F4861008222FD /* FriendView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +349,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8AB1243251F4861008222FD /* FriendView.swift in Sources */,
+				E8AB124E251F48F3008222FD /* FriendStore.swift in Sources */,
 				E8EC9955251F2B5100BD234D /* TargetView.swift in Sources */,
 				E86BB7D7251E756C006D61A2 /* AddTargetButton.swift in Sources */,
 				E86BB7C7251E66BC006D61A2 /* TargetStore.swift in Sources */,
@@ -343,6 +362,7 @@
 				E8EC994B251E7E9E00BD234D /* TargetSelectItem.swift in Sources */,
 				E83A8541251DF5F300B1734D /* KlimaApp.swift in Sources */,
 				E83A8557251DFBD200B1734D /* ProgressBar.swift in Sources */,
+				E8AB1248251F4888008222FD /* Friend.swift in Sources */,
 				E83A8554251DF76400B1734D /* SharingView.swift in Sources */,
 				E86BB7CB251E689D006D61A2 /* AddTargetView.swift in Sources */,
 			);
