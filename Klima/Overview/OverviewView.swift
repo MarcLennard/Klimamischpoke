@@ -24,7 +24,7 @@ struct OverviewView: View {
                             Text("50 Punkte")
                                 .foregroundColor(.orange)
                             Divider()
-                            Text("2 kg CO² eingespart")
+                            Text("2 kg CO₂ eingespart")
                                 .foregroundColor(.green)
                         }
                     }
@@ -36,7 +36,7 @@ struct OverviewView: View {
                             .imageScale(.large)
                         VStack(alignment: .leading) {
                             Text("5km")
-                            Text("5kg CO² eingespart")
+                            Text("5kg CO₂ eingespart")
                                 .font(.subheadline)
                                 .foregroundColor(.green)
                         }
@@ -50,7 +50,7 @@ struct OverviewView: View {
                             .imageScale(.large)
                         VStack(alignment: .leading) {
                             Text("Vegan gegessen")
-                            Text("5kg CO² eingespart")
+                            Text("5kg CO₂ eingespart")
                                 .font(.subheadline)
                                 .foregroundColor(.green)
                         }
@@ -64,7 +64,7 @@ struct OverviewView: View {
                             .imageScale(.large)
                         VStack(alignment: .leading) {
                             Text("Auf dem Markt eingekauft")
-                            Text("5kg CO² eingespart")
+                            Text("5kg CO₂ eingespart")
                                 .font(.subheadline)
                                 .foregroundColor(.green)
                         }

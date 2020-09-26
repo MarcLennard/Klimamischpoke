@@ -31,7 +31,7 @@ struct TargetsView: View {
                                     Text("Noch 1 Woche")
                                         .foregroundColor(.orange)
                                     Divider()
-                                    Text("51 kg CO² eingespart")
+                                    Text("51 kg CO₂ eingespart")
                                         .foregroundColor(.green)
                                 }
                                 Text("234 Klimapunkte")
@@ -44,7 +44,7 @@ struct TargetsView: View {
                             Link(destination: URL(string: "https://uba.co2-rechner.de/de_DE/living-hs#panel-calc")!) {
                                 HStack {
                                     Spacer()
-                                    Text("CO² Rechner des Umweltbundesamts")
+                                    Text("CO₂ Rechner des Umweltbundesamts")
                                     .foregroundColor(.white)
                                         .padding()
                                     Spacer()

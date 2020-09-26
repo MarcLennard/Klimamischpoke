@@ -19,7 +19,7 @@ struct FriendView: View {
                     Text("\(friend.points) Klimapunkte")
                         .foregroundColor(.orange)
                         .font(.headline)
-                    Text("\(friend.co2Saving) kg CO² eingespart")
+                    Text("\(friend.co2Saving) kg CO₂ eingespart")
                         .foregroundColor(.green)
                         .font(.headline)
                 }

@@ -43,7 +43,7 @@ class FriendStore: ObservableObject {
                    targets: [
                     Target(
                         category: "Wäsche",
-                        title: "Wasch Wäsche bei 30 statt 40 ¡C"
+                        title: "Wasch Wäsche bei 30 statt 40 °C"
                     ),
                     Target(
                         category: "Energie",

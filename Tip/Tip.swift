@@ -52,8 +52,8 @@ struct TipEntryView : View {
                     .font(.system(size: 10))
                     .foregroundColor(Color.init(red: 0.13, green: 0.54, blue: 0.13))
             }
-            Text("\n1x in der Woche kalt duschen spart 100g CO2")
-                .font(.system(size: 13))
+            Text("\nBei 30°C waschen spart jährlich 20kg CO₂")
+                .font(.system(size: 15))
             Spacer()
         }
         .padding()
