@@ -15,6 +15,13 @@ struct TargetsView: View {
             Group {
                     ScrollView {
                             VStack {
+                                HStack{
+                                    Text("Silke Haller")
+                                        .bold()
+                                    Spacer()
+                                }
+                                .padding()
+                                
                                 HStack {
                                     Spacer()
                                     ProgressBar(co2Progress: .constant(0.85), pointProgress: .constant(0.75))
@@ -30,21 +37,35 @@ struct TargetsView: View {
                                 Text("234 Klimapunkte")
                             }
                             .background(Color.gray.opacity(0.2))
-                            .cornerRadius(10)
                             .padding()
-                            
-                        if targetStore.selectedTargets.count == 0 {
-                            Text("Du hast keine Ziele ausgesucht")
-                        }
-                        else {
-                        LazyVStack {
-                                ForEach(targetStore.selectedTargets.map { $0 }) { target in
-                                    TargetView(target: target)
+                        
+                            Link(destination: URL(string: "https://uba.co2-rechner.de/de_DE/living-hs#panel-calc")!) {
+                                HStack {
+                                    Spacer()
+                                    Text("CO² Rechner des Umweltbundesamts")
+                                    .foregroundColor(.white)
+                                        .padding()
+                                    Spacer()
                                 }
                             }
-                        .padding()
+                            .background(Color.gray.opacity(0.2))
+                            .padding()
+                            .cornerRadius(10)
+                        
+                        
+                        
+                            if targetStore.selectedTargets.count == 0 {
+                                Text("Du hast keine Ziele ausgesucht")
+                            }
+                            else {
+                            LazyVStack {
+                                    ForEach(targetStore.selectedTargets.map { $0 }) { target in
+                                        TargetView(target: target)
+                                    }
+                                }
+                            .padding()
+                        }
                     }
-                }
             }
             .navigationBarItems(trailing: AddTargetButton(selectedTargets: $targetStore.selectedTargets, callback: { targets in
                 try? targetStore.setTargets(targets)
