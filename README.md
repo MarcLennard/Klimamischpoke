@@ -13,8 +13,8 @@ Jeder einzelne von uns kann durch sein Handeln dazu beitragen, unser Klima zu sc
 * Erhalte Informationen über ganz Münster
 * Sieh dein Verhalten im Vergleich zu Münster
 
-![Übersichtsvideo](https://github.com/MarcLennard/Klimamischpoke/blob/Readme/Images/Übersicht.gif)
+![Übersichtsvideo](https://github.com/MarcLennard/Klimamischpoke/blob/master/Images/Übersicht.gif)
 
 * Werde regelmäßig an deine Ziele erinnert, ganz ohne Nervfaktor
 
-![Video zu Benachrichtigungen](https://github.com/MarcLennard/Klimamischpoke/blob/Readme/Images/Benachrichtigung.gif)
+![Video zu Benachrichtigungen](https://github.com/MarcLennard/Klimamischpoke/blob/master/Images/Benachrichtigung.gif)
